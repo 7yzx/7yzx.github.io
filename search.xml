@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>text</title>
+      <title>ubuntu空间管理</title>
       <link href="/2023/11/27/text/"/>
       <url>/2023/11/27/text/</url>
       
-        <content type="html"><![CDATA[<h3 id="空间管理"><a href="#空间管理" class="headerlink" title="空间管理"></a>空间管理</h3><p>对于ubuntu分配的空间总是很珍贵。<br>记录一下自己经常用的比较好的查看空间命令</p><ol><li><p>查看空间大小</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">du -sh ~/*</span><br></pre></td></tr></table></figure><p>可以看到该目录各个子目录的空间大小。</p></li><li><p>stacer 一个超级好用的ubuntu管理工具<br><img src="/image.png" alt="stacer"><br>这个界面就很好，直接github就可以搜索了</p></li><li></li></ol>]]></content>
+        <content type="html"><![CDATA[<h3 id="空间管理"><a href="#空间管理" class="headerlink" title="空间管理"></a>空间管理</h3><p>对于ubuntu分配的空间总是很珍贵。<br>记录一下自己经常用的比较好的查看空间命令</p><ol><li><p>查看空间大小</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">du -sh ~/*</span><br></pre></td></tr></table></figure><p>可以看到该目录各个子目录的空间大小。</p></li><li><p>stacer 一个超级好用的ubuntu管理工具<br><img src="/./text/image.png" alt="stacer"><br>这个界面就很好，直接github就可以搜索了</p></li><li></li></ol>]]></content>
       
       
       
