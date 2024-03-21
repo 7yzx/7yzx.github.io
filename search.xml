@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ubuntu下新建clash快捷方式</title>
+      <link href="/2024/03/21/ubuntu%E4%B8%8B%E6%96%B0%E5%BB%BAclash%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
+      <url>/2024/03/21/ubuntu%E4%B8%8B%E6%96%B0%E5%BB%BAclash%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h1>ubuntu下使用clash客户端</h1><h2 id="下载">下载</h2><p><a href="https://xs2021.github.io/2021/05/06/3.%20%E9%AD%94%E6%B3%95%E6%8E%A8%E8%8D%90&amp;%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%EF%BC%88%E9%95%BF%E6%9C%9F%E6%9B%B4%E6%96%B0%EF%BC%89/#toc-heading-4">VPN大全</a>同时里面也提到了客户端的安装，不过连接失效了。</p><p><a href="https://dl.gtk.pw/proxy/linux/">ubuntuclash</a>，点击下载</p><h2 id="安装">安装</h2><p>参考</p><h2 id="桌面快捷方式">桌面快捷方式</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/share/applications</span><br><span class="line">sudo gedit clash.desktop</span><br><span class="line"> <span class="comment"># 填入以下内容</span></span><br><span class="line"> <span class="comment">#Exec是文件执行的位置</span></span><br><span class="line"> <span class="comment">#Icon是图标文件的位置</span></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Name=clash</span><br><span class="line">Exec=/home/yzx/Videos/clash/clash/cfw</span><br><span class="line">Icon=/home/yzx/Videos/clash/clash/icon-shrink.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">X-MultipleArgs=<span class="literal">false</span></span><br><span class="line">Type=Application</span><br><span class="line">Encoding=UTF-8</span><br><span class="line">Categories=Application;</span><br><span class="line">StartupNotify=<span class="literal">false</span></span><br></pre></td></tr></table></figure><p><img src="/2024/03/21/ubuntu%E4%B8%8B%E6%96%B0%E5%BB%BAclash%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/icon-shrink.png" alt="icon-shrink"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ubuntu 技巧 clash </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/2024/01/14/test/"/>
       <url>/2024/01/14/test/</url>
