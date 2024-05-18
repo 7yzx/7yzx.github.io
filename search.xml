@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>毕设笔记</title>
+      <link href="/2024/05/07/%E6%AF%95%E8%AE%BE%E7%AC%94%E8%AE%B0/"/>
+      <url>/2024/05/07/%E6%AF%95%E8%AE%BE%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="EG-BTS">EG-BTS</h2><h3 id="损失函数">损失函数</h3><p>Q1.为什么使用F(x)=ln(x+α)</p><p>A1：为了均衡误差。因为这个误差在x ，y方向很敏感，所以采用均衡误差的方式，既能体现边缘信息又能保持误差不变</p><p>Q2：法向量损失的意义</p><hr><p>A2：</p><p>法向量在二维图像中的估计具有多种重要意义：</p><ol><li><strong>几何理解：</strong> 估计图像中每个像素点的法向量可以提供对图像中物体表面几何结构的理解。这有助于识别物体的形状、边缘和表面方向，为各种计算机视觉任务提供更丰富的几何信息。</li><li><strong>场景理解：</strong> 法向量可以帮助理解场景的三维几何属性，例如表面的朝向、光照条件等。这对于识别和理解场景中的不同物体以及它们之间的关系非常重要。</li><li><strong>图像增强：</strong> 通过估计法向量，可以实现一些图像增强技术，如提高深度图像的质量和清晰度，去除噪声，或者进行更精确的边缘检测。</li><li><strong>深度学习任务的辅助信息：</strong> 在深度学习任务中，法向量估计可以作为附加的辅助信息来帮助模型更好地理解图像。例如，在目标检测或语义分割任务中，法向量可以提供有关目标形状和环境的额外信息，从而提高模型的性能。</li></ol><p>总的来说，通过估计图像中每个像素点的法向量，我们可以获得更丰富的几何信息，这对于各种计算机视觉任务和深度学习任务都具有重要意义，有助于提高算法的性能和鲁棒性。</p><hr><h2 id="GDTrack">GDTrack</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 毕设笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答辩内容 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ubuntu下新建clash快捷方式</title>
       <link href="/2024/03/21/ubuntu%E4%B8%8B%E6%96%B0%E5%BB%BAclash%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/"/>
       <url>/2024/03/21/ubuntu%E4%B8%8B%E6%96%B0%E5%BB%BAclash%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F/</url>
@@ -45,7 +70,7 @@
       
       <categories>
           
-          <category> 记录 </category>
+          <category> 笔记记录 </category>
           
       </categories>
       
@@ -134,7 +159,7 @@
       <link href="/2023/11/27/hexo%E4%BD%BF%E7%94%A8-%E5%8F%91%E5%B8%83%E4%BB%A5%E5%8F%8A%E9%83%A8%E7%BD%B2/"/>
       <url>/2023/11/27/hexo%E4%BD%BF%E7%94%A8-%E5%8F%91%E5%B8%83%E4%BB%A5%E5%8F%8A%E9%83%A8%E7%BD%B2/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>更新日志</p></blockquote><ul><li>[ ] 更新发一篇新博客</li><li>[ ] 下一次写如何从三部曲部署到github，加如何编写博客内容</li><li>[ ] 博客内容补充(常用的图片，公式，字体，颜色，特殊标志之类)</li><li>[ ] testing</li></ul><h2 id="快速开始">快速开始</h2><h2 id="发一篇新博客">发一篇新博客</h2><blockquote><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p></blockquote><h3 id="新建文章">新建文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new [layout] <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><strong>文章标题以及文件位置</strong><br><code>layout</code>作为可选项，有post(博客页面),page(网页页面),draft(草稿)。从代码中可以看出默认post，后面带上title标题就好，标题直接打，不用双引号的。</p><p>生成的文件位置在<code>source/xx</code> 下，文件名称默认以<code>md</code>结尾，可以在<code>_config.yml</code>中调整，建议使用年-月-日-title方便管理（如代码）。</p><p>到此就新建了一个博客文章。就可以开始编辑其中的内容。</p><p>具体细节</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span> <span class="comment"># File name of new posts</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="尝试修改">尝试修改</h2><h2 id="本地部署加发布在github上">本地部署加发布在github上</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server <span class="comment">#Run local server</span></span><br><span class="line">hexo generate <span class="comment">#Generate static files</span></span><br><span class="line">hexo deploy <span class="comment">#Deploy to remote sites</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>更新日志</p></blockquote><ul><li>[ ] 更新发一篇新博客</li><li>[ ] 下一次写如何从三部曲部署到github，加如何编写博客内容</li><li>[ ] 博客内容补充(常用的图片，公式，字体，颜色，特殊标志之类)</li><li>[X] testing</li></ul><h2 id="快速开始">快速开始</h2><h2 id="发一篇新博客">发一篇新博客</h2><blockquote><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p></blockquote><h3 id="新建文章">新建文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new [layout] <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p><strong>文章标题以及文件位置</strong><br><code>layout</code>作为可选项，有post(博客页面),page(网页页面),draft(草稿)。从代码中可以看出默认post，后面带上title标题就好，标题直接打，不用双引号的。</p><p>生成的文件位置在 <code>source/xx</code> 下，文件名称默认以 <code>md</code>结尾，可以在 <code>_config.yml</code>中调整，建议使用年-月-日-title方便管理（如代码）。</p><p>到此就新建了一个博客文章。就可以开始编辑其中的内容。</p><p>具体细节</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Writing</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span> <span class="comment"># File name of new posts</span></span><br><span class="line"><span class="attr">default_layout:</span> <span class="string">post</span></span><br><span class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="尝试修改">尝试修改</h2><h2 id="本地部署加发布在github上">本地部署加发布在github上</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server <span class="comment">#Run local server</span></span><br><span class="line">hexo generate <span class="comment">#Generate static files</span></span><br><span class="line">hexo deploy <span class="comment">#Deploy to remote sites</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -159,7 +184,7 @@
       <link href="/2023/11/27/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/"/>
       <url>/2023/11/27/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E8%AE%B0%E5%BD%95/</url>
       
-        <content type="html"><![CDATA[<p>更新日志:</p><p>12.1</p><ul><li>弄好了图片</li></ul><p>11.29</p><ul><li>弄清楚了post page draft含义</li><li>测试了Post Front-matter以年月日自动命名</li><li><s>test</s></li></ul><p>11.28</p><ul><li>github action 自动部署完成</li><li>图片解决，放在source/img下,调用的时候使用(/img/image.png)，不要使用./我用加了就错了。</li></ul><blockquote><p>待解决问题,无法使用公式</p></blockquote><h2 id="主题选择butterfly">主题选择butterfly</h2><p>很好看,而且功能很齐全.</p><h2 id="上传文章">上传文章</h2><p>问题:</p><p>无法显示图片,markdown中可以显示,但是网站文章中无法显示</p><p>图片测试:</p><p>picture local</p><p><img src="/img/image.png" alt="1"></p><h2 id="公式测试">公式测试</h2><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">x_x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>]]></content>
+        <content type="html"><![CDATA[<p>更新日志:</p><p>5.7</p><ul><li>关于图片，目前情况是本地可以显示，并且网站也是，解决方法是在post中新建文件同时也新建一个文件夹放图片，</li></ul><p>12.1</p><ul><li>弄好了图片</li></ul><p>11.29</p><ul><li>弄清楚了post page draft含义</li><li>测试了Post Front-matter以年月日自动命名</li><li><s>test</s></li></ul><p>11.28</p><ul><li>github action 自动部署完成</li><li>图片解决，放在source/img下,调用的时候使用(/img/image.png)，不要使用./我用加了就错了。</li></ul><blockquote><p>待解决问题,无法使用公式</p></blockquote><h2 id="主题选择butterfly">主题选择butterfly</h2><p>很好看,而且功能很齐全.</p><h2 id="上传文章">上传文章</h2><p>问题:</p><p>无法显示图片,markdown中可以显示,但是网站文章中无法显示</p><p>图片测试:</p><p>picture local</p><p><img src="/img/image.png" alt="1"></p><h2 id="公式测试">公式测试</h2><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>x</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">x_x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span></p>]]></content>
       
       
       
