@@ -4,12 +4,37 @@
   
     
     <entry>
+      <title>动手学习深度学习（2）</title>
+      <link href="/2024/05/19/%E5%8A%A8%E6%89%8B%E5%AD%A6%E4%B9%A0%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%882%EF%BC%89/"/>
+      <url>/2024/05/19/%E5%8A%A8%E6%89%8B%E5%AD%A6%E4%B9%A0%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%882%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<p>第四章多层感知机中介绍了深度学习中的一些概念，个人认为这些概念比较重要，对于整个神经网络的理解都非常重要。</p><h2 id="模型选择">模型选择</h2><ul><li>训练数据集：训练模型的参数</li><li>验证数据集：选择模型的超参数（扩充办法是使用K折交叉验证）</li></ul><p>值得注意的是test测试集就仅使用一次，不用来调超参。</p><h3 id="K折交叉验证">K折交叉验证</h3><p>这里，原始训练数据被分成𝐾个不重叠的子集。 然后执行𝐾次模型训练和验证，每次在𝐾−1个子集上进行训练， 并在剩余的一个子集（在该轮中没有用于训练的子集）上进行验证。 最后，通过对𝐾次实验的结果取平均来估计训练和验证误差。</p><h2 id="欠拟合和过拟合">欠拟合和过拟合</h2><pre><code>数据集和模型容量</code></pre><table><thead><tr><th style="text-align:center"></th><th>简单</th><th style="text-align:center">复杂</th></tr></thead><tbody><tr><td style="text-align:center">低</td><td>正常</td><td style="text-align:center">欠拟合</td></tr><tr><td style="text-align:center">高</td><td>过拟合</td><td style="text-align:center">正常</td></tr></tbody></table><p>欠拟合(underfitting)：是指模型无法继续减少训练误差。如果模型不能降低训练误差，这可能意味着模型过于简单（即表达能力不足）， 无法捕获试图学习的模式。</p><p>过拟合(overfitting)：训练误差明显低于验证误差。简单的数据集使用了复杂的模型。用于对抗过拟合的方法为正则化（regularization）。</p><h3 id="模型复杂度评估">模型复杂度评估</h3><h4 id="参数数量计算">参数数量计算</h4><p>参数数量是衡量模型复杂度的基本指标。通常，参数数量越多，模型越复杂。计算方法如下：</p><ul><li><p><strong>全连接层</strong> ：假设输入维度为，输出维度为$$d_{out}$$，则参数数量为 $$d_{in}\times d_{out}+d_{out}$$（包含偏置）。</p></li><li><p><strong>卷积层</strong> ：假设卷积核数量为$$K$$，卷积核尺寸为$$h\times w$$，输入通道数为$$C_{in}$$，输出通道数为$$C_{out}$$，则参数数量为 $$K\times h\times w\times C_{in}\times C_{out}+C_{out}$$（包含偏置）。</p></li></ul><h4 id="计算复杂度">计算复杂度</h4><p>计算复杂度通常用浮点运算次数（FLOPs，Floating Point Operations）来衡量。计算复杂度越高，模型越复杂。</p><h2 id="权重衰减">权重衰减</h2><p>（weight-decay）</p><h2 id="丢弃法">丢弃法</h2><h2 id="前向传播、反向传播">前向传播、反向传播</h2><h2 id="kaggle竞赛代码问题">kaggle竞赛代码问题</h2><h3 id="数据预处理">数据预处理</h3><ol><li>先标准化然后填充</li></ol><ul><li>先标准化再填充缺失值为0，可以确保标准化的均值和标准差计算不受缺失值的影响，从而保证标准化效果的准确性。</li><li>填充缺失值为0是因为标准化后的数据均值为0，填充0是合理且合适的。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 动手学习深度学习 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pytorch_deep_learing-1</title>
       <link href="/2024/05/19/pytorch-deep-learing-1/"/>
       <url>/2024/05/19/pytorch-deep-learing-1/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>关于<a href="https://www.learnpytorch.io/">pytorch</a>的使用笔记</p><h2 id="学习Tensor类型">学习Tensor类型</h2><p>pytorch 官方说明<a href="https://pytorch.org/docs/stable/tensors.html">tensor</a></p>]]></content>
       
+      
+      <categories>
+          
+          <category> pytorch_deep_learing </category>
+          
+      </categories>
       
       
     </entry>
@@ -21,7 +46,7 @@
       <link href="/2024/05/19/%E5%8A%A8%E6%89%8B%E5%AD%A6%E4%B9%A0%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%881%EF%BC%89/"/>
       <url>/2024/05/19/%E5%8A%A8%E6%89%8B%E5%AD%A6%E4%B9%A0%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%EF%BC%881%EF%BC%89/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p><a href="https://zh-v2.d2l.ai/index.html">动手学习深度学习</a> 中文版是由英文版翻译，前面的<a href="https://zh-v2.d2l.ai/chapter_preliminaries/index.html">预备知识</a>主要了解线性代数，微分差不多；第三章<a href="https://zh-v2.d2l.ai/chapter_linear-networks/index.html">线性神经网络</a>，主要举例图像分类的例子。</p><p>学习过程中参考的</p><ol><li><p><a href="https://tangshusen.me/Dive-into-DL-PyTorch/#/">https://tangshusen.me/Dive-into-DL-PyTorch/#/</a></p></li><li><p><a href="https://zh-v2.d2l.ai/">https://zh-v2.d2l.ai/</a></p></li></ol>]]></content>
       
       
       <categories>
